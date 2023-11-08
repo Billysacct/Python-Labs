@@ -33,15 +33,15 @@ t = lowercase_cn.count("t")
 r = lowercase_cn.count("r")
 u = lowercase_cn.count("u")
 e = lowercase_cn.count("e")
-true_added = t + r + u + e
+first_digit = t + r + u + e
 
 l = lowercase_cn.count("l")
 o = lowercase_cn.count("o")
 v = lowercase_cn.count("v")
 e = lowercase_cn.count("e")
-love_added = l + o + v + e
+second_digit = l + o + v + e
 
-true_love_score = int(str(true_added) + str(love_added)) 
+true_love_score = int(str(first_digit) + str(second_digit)) 
 
 if (true_love_score < 10) or (true_love_score > 90):
   print(f"Your score is {true_love_score}, you go together like coke and mentos.")
